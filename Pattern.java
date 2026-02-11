@@ -110,6 +110,10 @@ public class Pattern {
         pattern12();
         System.out.println();
 
+        //pattern 13
+        pattern13();
+        System.out.println();
+
     }
 
 //pattern 9
@@ -171,17 +175,33 @@ public class Pattern {
     //pattern 12
     static void pattern12() {
         int n = 5;
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
             }
 
-            for (int j = 1; j < n - 1; j++) {
-                System.out.print(" ");
+            for (int j = 4 - 1; j >= i; j--) {
+                System.out.print("  ");
             }
-
-            for (int j = n - 1; j >= 0; j--) {
+            for (int j = 4 - 1; j >= i; j--) {
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // pattern 13
+    static void pattern13() {
+        int n = 5;
+        int num = 1;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num + " ");
+                num = num + 1;
             }
             System.out.println();
         }
