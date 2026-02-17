@@ -129,6 +129,10 @@ public class Pattern {
         //pattern 18
         pattern18();
         System.out.println();
+
+        //pattern 19
+        pattern19();
+        System.out.println();
     }
 
 //pattern 9
@@ -272,6 +276,26 @@ public class Pattern {
             for (int j = 0; j <= i; j++) {
                 System.out.print(ch + " ");
                 ch++;
+            }
+            System.out.println();
+        }
+    }
+
+    //pattern 19
+    static void pattern19() {
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            for (int j = n - 1; j >= i; j--) {
+                System.out.print("  ");
+            }
+            for (int j = n - 1; j >= i; j--) {
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print("* ");
             }
             System.out.println();
         }
